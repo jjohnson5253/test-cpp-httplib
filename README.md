@@ -9,9 +9,10 @@ Dependencies
 ```sh
 sudo apt-get install libssl-dev
 ```
+ - Comment out the OS_WINDOWS macro in main.cpp
+
 **Windows**
  - Follow [MSYS2](https://www.msys2.org/) installation to get g++ compiler on windows
- - comment out the OS_WINDOWS macro in main.cpp
 
 Usage
 =======
