@@ -1,8 +1,14 @@
+#define CPPHTTPLIB_OPENSSL_SUPPORT
+#define OS_WINDOWS // comment this out if not using windows
 #include <iostream>
 #include <vector>
 #include <string>
-#define CPPHTTPLIB_OPENSSL_SUPPORT
 #include "httplib.h"
+
+#ifdef OS_WINDOWS
+#include <wincrypt.h>
+#include <Windows.h>
+#endif
 
 using namespace std;
 

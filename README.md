@@ -9,16 +9,21 @@ Dependencies
 ```sh
 sudo apt-get install libssl-dev
 ```
+**Windows**
+ - Follow [MSYS2](https://www.msys2.org/) installation to get g++ compiler on windows
+ - comment out the OS_WINDOWS macro in main.cpp
 
 Usage
 =======
-
+**Linux**
 ```sh
 g++ main.cpp -lcrypto -lssl
-```
-
-```sh
 ./a.out
+```
+**Windows**
+```sh
+g++ main.cpp -lwsock32 -lWs2_32 -lcrypt32 -lcrypto -lssl
+a.exe
 ```
 Should see a result like this:
 ```
